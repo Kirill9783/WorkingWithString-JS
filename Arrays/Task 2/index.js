@@ -7,10 +7,10 @@ const users = [
 ];
 
 function filterAndSortUsers(users) {
-    return filterAndSortUsers = users
-                                .filter(age => age[1] > 25 && age[2] === true)
-                                .sort((a, b) => a[1] - b[1])
-                                .map(age => age[0]);
+    return  users
+                .filter(user => user[1] > 25 && user[2] === true)
+                .sort((a, b) => a[1] - b[1])
+                .map(user => user[0]);
 }
 
 const sportUsersOver25 = filterAndSortUsers(users);

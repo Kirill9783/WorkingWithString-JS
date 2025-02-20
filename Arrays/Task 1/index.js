@@ -1,7 +1,8 @@
 const word = 'HEllO, JavaScript';
 
 function countVowels(str) {
-    return str.match(/[aeiouy]/gi).length;
+    const matches = str.match(/[aeiouy]/gi);
+    return matches ? matches.length : 0;
 }
 
 const vowelCount = countVowels(word);
